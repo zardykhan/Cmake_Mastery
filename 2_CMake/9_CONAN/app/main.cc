@@ -20,7 +20,7 @@ int main(int argc, char **argv)
         NLOHMANN_JSON_VERSION_MINOR,
         NLOHMANN_JSON_VERSION_PATCH);
     spdlog::info(json_message);
-
+// one way to use the the argv argument
     cxxopts::Options options(project_name.data());
     options.add_options("arguments")("h,help", "Print usage");
 
